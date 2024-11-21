@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float jumpPower = 5f;
     public float playerHealth = 100f;
     public float sprintSpeed = 1.5f;
+    public int points = 0; 
     //private GameObject playerCube;
     //private Vector3 scaleChange, positionChange;
 
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
     
-        Debug.Log("Player is ready to explore!");
+        Debug.Log("Time to collect mushrooms!");
         transform.position = new Vector3 (0,0,0);
         
         //scaleChange = new Vector3(-0.01f, -0.01f, -0.01f);
