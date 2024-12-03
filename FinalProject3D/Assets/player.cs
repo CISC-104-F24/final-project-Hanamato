@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float jumpPower = 5f;
     public float playerHealth = 100f;
     public float sprintSpeed = 1.5f;
-    public int points = 0; 
+     
     //private GameObject playerCube;
     //private Vector3 scaleChange, positionChange;
 
