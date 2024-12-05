@@ -15,10 +15,10 @@ public int points = 0;
     // Update is called once per frame
     void Update()
     {
-        if (points = 15)
+        /*if (points = 15)
         {
             Debug.Log("Obtained the highest score!");
-        }
+        }*/
     }
 
     private void OnCollisionEnter (Collision collision)   

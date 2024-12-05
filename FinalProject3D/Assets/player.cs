@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float baseSpeed = 1.5f;
+    public float baseSpeed = 2f;
     public float jumpPower = 5f;
     public float playerHealth = 100f;
     public float sprintSpeed = 1.5f;
@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
         {
             Rigidbody myRigidBody = GetComponent<Rigidbody>();
             myRigidBody.AddForce(new Vector3(0,10,0), ForceMode.Impulse);
+            
+            
             
             //transform.position = transform.position + new Vector3 (0,10,0) * jumpPower *Time.deltaTime;
             //Debug.Log ("space pressed");
