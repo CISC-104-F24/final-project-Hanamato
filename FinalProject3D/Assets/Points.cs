@@ -8,6 +8,7 @@ public class Points : MonoBehaviour
 public int points = 0;
 public GameObject door;
 public string LevelName;
+public string SceneName;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,8 @@ public string LevelName;
 
         if (points == -2)
         {
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
+            
         }
 
     }
@@ -50,7 +52,19 @@ public string LevelName;
 
         if(collision.gameObject.name =="locked")
         {
-            SceneManager.LoadScene(LevelName);
+            SceneManager.LoadScene(3);
+        }
+
+        if(collision.gameObject.name =="Megashroom")
+        {
+            Debug.Log("You win! Congratulations!");
+            SceneManager.LoadScene(4);
+        }
+
+        if(collision.gameObject.name =="Evil Door")
+        {
+            Debug.Log("This might be enough for now");
+            SceneManager.LoadScene(4);
         }
 
     }
