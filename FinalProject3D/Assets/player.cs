@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float baseSpeed = 2f;
     public float jumpPower = 5f;
-    public float playerHealth = 100f;
+    //public float playerHealth = 100f;
     public float sprintSpeed = 1.5f;
      
     //private GameObject playerCube;
